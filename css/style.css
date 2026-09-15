@@ -2,3 +2,11 @@ h1  {
     background-color: brown;
     font-family: "Georgia", serif;
 }
+
+div {
+    font-family: "Times New Roman", serif;
+}
+
+input {
+    font-family: "Times New Roman", serif;
+}
