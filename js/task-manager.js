@@ -1,8 +1,8 @@
 function weeklyGoal(userName, dailyGoal, bonusTasks){
     // Weekly Goal: Calculate the total weekly task goal for a user.
-       userName = document.getElementById(userName);
-       dailyGoal = document.getElementById(dailyGoal);
-       bonusTasks =document.getElementById(bonusTasks);
+       userName = document.getElementById("userName");
+       dailyGoal = document.getElementById("dailyGoal");
+       bonusTasks = document.getElementById("bonusTasks");
         // Output message to console
         // FIXED: Added missing parenthesis to console.log. :)
         console.log("Checking status for: " + userName); 
@@ -18,7 +18,6 @@ function weeklyGoal(userName, dailyGoal, bonusTasks){
         let totalGoal = weeklyGoal + bonusTasks; 
  
         // Output results to web page
-        output = ("User: " + userName + "<br>");
         // Fixed quotation marks.
         output = ("User: " + userName + "<br>" + "Total Weekly Goal: " + totalGoal);
 
@@ -29,3 +28,12 @@ function weeklyGoal(userName, dailyGoal, bonusTasks){
         clicking.addEventListener("click",)
 }
 
+    // Add EventListener to btn, get form values and call weeklyGoal function
+    const btn = document.getElementById("goal-btn");
+    btn.addEventListener("click", function() {
+        event.preventDefault(); // Prevent form submission
+        let userName = document.getElementById("userName").value;
+        let dailyGoal = parseInt(document.getElementById("dailyGoal").value);
+        let bonusTasks = parseInt(document.getElementById("bonusTasks").value);
+        weeklyGoal(userName, dailyGoal, bonusTasks);
+    });

@@ -10,3 +10,7 @@ div {
 input {
     font-family: "Times New Roman", serif;
 }
+
+div[id="metric-converter"] {
+    font-family: "Arial", sans-serif;
+}
