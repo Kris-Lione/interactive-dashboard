@@ -1,7 +1,6 @@
 function metricImperialConverter(unit, number) {
     // Finds values from index.html
-    let unit = document.getElementsByTagName("conversion-type")[0].value;
-    let number = parseFloat(document.getElementById("numeric-value").value);
+
 
     // Performs calculations using the unit type and numbers.
     if (unit == 'inches-centimeters') {
@@ -24,8 +23,11 @@ function metricImperialConverter(unit, number) {
 
 const abc = document.getElementById("convertedValue-abc");
  abc.addEventListener("click", function() {
-    event.preventDefault(); // Prevent form submission
-    let unit = document.getElementsByTagName("conversion-type")[0].value;
-    let number = parseFloat(document.getElementById("numeric-value").value);
+    event.preventDefault(); // Prevent form submission56
+
+    // Finds values from index.html
+    let unit = document.getElementsByTagName("conversion-type")[0];
+    let number = parseFloat(document.getElementById("numeric-value"));
     metricImperialConverter(unit, number);
+    document.getElementById("output-value").innerHTML = result;
 });
