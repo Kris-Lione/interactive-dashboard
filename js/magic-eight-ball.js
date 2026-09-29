@@ -1,4 +1,5 @@
 // Put your JavaScript code in this file
+<<<<<<< HEAD
 function displayAnswer() {
     // Possible answers for the 8 ball to display.
     // Added a interesting 8th answer.
@@ -27,3 +28,6 @@ m8Ball.addEventListener("mousedown", function(){
     displayAnswer()
    };
 });
+=======
+
+>>>>>>> development
